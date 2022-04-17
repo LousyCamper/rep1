@@ -3,7 +3,7 @@
         "id": "7e7bfce1521cd490",
         "type": "tab",
         "label": "Поток 1",
-        "disabled": true,
+        "disabled": false,
         "info": "",
         "env": []
     },
@@ -51,6 +51,14 @@
         "id": "438915592f9ff747",
         "type": "tab",
         "label": "FRED",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "22777801d2ac980e",
+        "type": "tab",
+        "label": "Flow 3",
         "disabled": false,
         "info": "",
         "env": []
