@@ -1,0 +1,1311 @@
+[
+    {
+        "id": "7e7bfce1521cd490",
+        "type": "tab",
+        "label": "Поток 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9276955dea773b3f",
+        "type": "tab",
+        "label": "Поток 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ca1a16e444f63379",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "06d82de16a2ba340",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d057281b87514831",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "716238dcd588d322",
+        "type": "tab",
+        "label": "IPAPI",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "438915592f9ff747",
+        "type": "tab",
+        "label": "FRED",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e30a32c2eb26bd72",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "589d1a8054ca5a92",
+        "type": "ui_tab",
+        "name": "Білицька Валерія",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "167fb6da2f90b5f7",
+        "type": "ui_group",
+        "name": "Білицька",
+        "tab": "589d1a8054ca5a92",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e64b66064b74e8d",
+        "type": "ui_group",
+        "name": "Валерія",
+        "tab": "589d1a8054ca5a92",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e0ee2083434a10ad",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "589d1a8054ca5a92",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cfddb7d215ec8662",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "8883",
+        "tls": "",
+        "clientid": "CamperClient1",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": false,
+        "birthTopic": "Camper/client1/status",
+        "birthQos": "1",
+        "birthRetain": "true",
+        "birthPayload": "online",
+        "birthMsg": {},
+        "closeTopic": "Camper/client1/status",
+        "closeQos": "1",
+        "closeRetain": "true",
+        "closePayload": "offline",
+        "closeMsg": {},
+        "willTopic": "Camper/client1/status",
+        "willQos": "1",
+        "willRetain": "true",
+        "willPayload": "offline (break)",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cb81acdbe97d447b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "tls": "",
+        "clientid": "CamperClient2",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "50514420b973c2fe",
+        "type": "websocket-client",
+        "path": "ws://l0usycamper.fred.sensetecnic.com/api/public/data",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "217c129e65bbb44b",
+        "type": "websocket-client",
+        "path": "wss://echo.websocket.org/public/data",
+        "tls": "98a16cef44275f85",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "bc142af1fd76be70",
+        "type": "websocket-listener",
+        "path": "wss://echo.websocket.org/public/data",
+        "wholemsg": "false"
+    },
+    {
+        "id": "98a16cef44275f85",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "dce2d618212d9b0c",
+        "type": "udp in",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "iface": "",
+        "port": "20000",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "cbb7fec694414721"
+            ]
+        ]
+    },
+    {
+        "id": "cbb7fec694414721",
+        "type": "debug",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "166b4c6e3fd1e3c7",
+        "type": "inject",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Valeriia Bilitska",
+        "payloadType": "str",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "893319ff070bcd20"
+            ]
+        ]
+    },
+    {
+        "id": "893319ff070bcd20",
+        "type": "udp out",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "21000",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 400,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "df7341c86f1886a1",
+        "type": "inject",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[0,1,2,3,255]",
+        "payloadType": "bin",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "17a184a32b5fabf8"
+            ]
+        ],
+        "info": "[0,1,2,3,255]"
+    },
+    {
+        "id": "17a184a32b5fabf8",
+        "type": "debug",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d3a9d61945331dbb",
+        "type": "inject",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "76ad083b5b18e08b"
+            ]
+        ]
+    },
+    {
+        "id": "76ad083b5b18e08b",
+        "type": "function",
+        "z": "7e7bfce1521cd490",
+        "name": "buffer",
+        "func": "msg.payload = Buffer.alloc(16,255); // виділення буферу на 16 байт\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "f58f02bbf001446b",
+                "887e3c3adf991b1b"
+            ]
+        ]
+    },
+    {
+        "id": "f58f02bbf001446b",
+        "type": "debug",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "887e3c3adf991b1b",
+        "type": "udp out",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "addr": "127.0.0.1",
+        "iface": "",
+        "port": "21000",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 560,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f54e5196f6984fbc",
+        "type": "inject",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "b2ac94b5b0fbd1cd"
+            ]
+        ]
+    },
+    {
+        "id": "b2ac94b5b0fbd1cd",
+        "type": "tcp request",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "server": "127.0.0.1",
+        "port": "23000",
+        "out": "sit",
+        "ret": "string",
+        "splitc": " ",
+        "newline": "",
+        "tls": "",
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "4487e94f1524c9cc"
+            ]
+        ]
+    },
+    {
+        "id": "4487e94f1524c9cc",
+        "type": "debug",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7832c8035938c68f",
+        "type": "tcp in",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "server": "server",
+        "host": "",
+        "port": "22000",
+        "datamode": "stream",
+        "datatype": "utf8",
+        "newline": "",
+        "topic": "",
+        "base64": false,
+        "tls": "",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "525b20314aa52085",
+                "9708b303ad632e6c"
+            ]
+        ]
+    },
+    {
+        "id": "8000f4285d5f5d29",
+        "type": "tcp out",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "host": "",
+        "port": "",
+        "beserver": "reply",
+        "base64": false,
+        "end": false,
+        "tls": "",
+        "x": 650,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "525b20314aa52085",
+        "type": "debug",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9708b303ad632e6c",
+        "type": "change",
+        "z": "7e7bfce1521cd490",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hello! My Name is Valeriia Bilitska.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 600,
+        "wires": [
+            [
+                "8000f4285d5f5d29"
+            ]
+        ]
+    },
+    {
+        "id": "8ba76cf988f4d441",
+        "type": "file in",
+        "z": "9276955dea773b3f",
+        "name": "Скан",
+        "filename": "C:/temp/barcods/штрих код.jpg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "d0f382da.60357"
+            ]
+        ]
+    },
+    {
+        "id": "7b5cc57aed6e1ed0",
+        "type": "inject",
+        "z": "9276955dea773b3f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 520,
+        "y": 480,
+        "wires": [
+            [
+                "8ba76cf988f4d441"
+            ]
+        ]
+    },
+    {
+        "id": "acdf2511ac402fb7",
+        "type": "debug",
+        "z": "9276955dea773b3f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "d3be2bc45be420b1",
+        "type": "http request",
+        "z": "9276955dea773b3f",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://zxing.org/w/decode",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "d815e254cd49fe28"
+            ]
+        ]
+    },
+    {
+        "id": "d0f382da.60357",
+        "type": "function",
+        "z": "9276955dea773b3f",
+        "name": "Формувати Запит",
+        "func": "//формування корисного навантаження для POST\n//складається зі статичного тексту з описом розділу\n//та змісту розділу, який є типом image/jpeg що береться з файлу\n//деталі - https://developer.mozilla.org/uk/docs/Web/HTTP/Basics_of_HTTP/MIME_types#multipartform-data \nvar tmp1;//верхня частина - початок розділу\nvar tmp2;//нижня частина - закінчення розділу\ntmp1 = '-----------------------------12818302946532\\r\\n';//межа початку розділу\ntmp1 += 'Content-Disposition: form-data; name=\"f\"; filename=\"1.jpg\"\\r\\n';//заголовок розділу\ntmp1 += 'Content-Type: image/jpeg\\r\\n\\r\\n';//заголовок розділу\ntmp2 = '\\r\\n-----------------------------12818302946532--';//межа кінця розділу\nvar buf1 = Buffer.from(tmp1);//перетворення тексту в бінарний буфер\nvar buf3 = Buffer.from(tmp2);//перетворення тексту в бінарний буфер\nvar ar =[buf1, msg.payload, buf3];//об'єднання буферів та вмісту файлу в один масив\nmsg.payload =  Buffer.concat(ar);//перетворення масиву в один буфер\n\n//формування заголовків запиту\nmsg.headers = {};//об'явили як об'єкт\nmsg.headers[\"host\"] = \"zxing.org\";\nmsg.headers[\"Accept-Encoding\"] = \"identity\";\nmsg.headers[\"accept\"] = \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\";\nmsg.headers[\"content-type\"]= \"multipart/form-data; boundary=---------------------------12818302946532\";\nvar len = msg.payload.length;//визначаємо довжину тіла запиту\nmsg.headers[\"content-length\"] = len.toString();//перетворюємо в текст \nmsg.headers[\"referer\"] = \"https://zxing.org/w/decode.jspx\";\nmsg.headers[\"connection\"] = \"keep-alive\";\nmsg.headers[\"upgrade-insecure-requests\"] = 1;\nreturn msg;//повідомлення для відправки методом POST",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 480,
+        "wires": [
+            [
+                "d3be2bc45be420b1"
+            ]
+        ]
+    },
+    {
+        "id": "d815e254cd49fe28",
+        "type": "html",
+        "z": "9276955dea773b3f",
+        "name": "вибірка",
+        "property": "payload",
+        "outproperty": "payload",
+        "tag": "#result pre",
+        "ret": "text",
+        "as": "single",
+        "x": 740,
+        "y": 560,
+        "wires": [
+            [
+                "14f534cf3bab4fc0"
+            ]
+        ]
+    },
+    {
+        "id": "14f534cf3bab4fc0",
+        "type": "function",
+        "z": "9276955dea773b3f",
+        "name": "zxind2ID",
+        "func": "msg.ID = (msg.statusCode == 200) ? msg.payload[2] : \"error\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 560,
+        "wires": [
+            [
+                "acdf2511ac402fb7"
+            ]
+        ]
+    },
+    {
+        "id": "921cf6eb36c802d7",
+        "type": "http in",
+        "z": "ca1a16e444f63379",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "0cf3cd6a89248e4c",
+                "b9bf68a695d6eaa6"
+            ]
+        ]
+    },
+    {
+        "id": "0cf3cd6a89248e4c",
+        "type": "debug",
+        "z": "ca1a16e444f63379",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b9bf68a695d6eaa6",
+        "type": "change",
+        "z": "ca1a16e444f63379",
+        "name": "now",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$now()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "ba878f9ab260f8af"
+            ]
+        ]
+    },
+    {
+        "id": "ba878f9ab260f8af",
+        "type": "template",
+        "z": "ca1a16e444f63379",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head></head>\n    <body>\n        <h1>Плинний час: {{payload}}</h1>\n    </body>\n</html>",
+        "output": "str",
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "269cc4ecb9445472"
+            ]
+        ]
+    },
+    {
+        "id": "269cc4ecb9445472",
+        "type": "http response",
+        "z": "ca1a16e444f63379",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 700,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "705ee572156e78a9",
+        "type": "mqtt in",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "topic": "NUFT TI4/Variant1/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cfddb7d215ec8662",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "d46535eaf9a8f08b"
+            ]
+        ]
+    },
+    {
+        "id": "d46535eaf9a8f08b",
+        "type": "debug",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4193b257401d576e",
+        "type": "mqtt in",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "topic": "NUFT TI4/Variant1/Klapan",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "cfddb7d215ec8662",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 650,
+        "y": 520,
+        "wires": [
+            [
+                "7d6e792e939b53a3"
+            ]
+        ]
+    },
+    {
+        "id": "7d6e792e939b53a3",
+        "type": "ui_gauge",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "group": "167fb6da2f90b5f7",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "className": "",
+        "x": 830,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a23a00ca4d0a132a",
+        "type": "ui_slider",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "167fb6da2f90b5f7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "8952dac7a1f28d56"
+            ]
+        ]
+    },
+    {
+        "id": "8952dac7a1f28d56",
+        "type": "mqtt out",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "topic": "NUFT TI4/Variant1/TT101",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cfddb7d215ec8662",
+        "x": 870,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d55f895131928111",
+        "type": "inject",
+        "z": "06d82de16a2ba340",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 600,
+        "wires": [
+            [
+                "f1559be899189ac7"
+            ]
+        ]
+    },
+    {
+        "id": "f1559be899189ac7",
+        "type": "function",
+        "z": "06d82de16a2ba340",
+        "name": "sin",
+        "func": "var a;\na = msg.payload/10000;\nmsg.payload = (Math.sin (a) + 1.0)*25.0 + 25\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "a23a00ca4d0a132a"
+            ]
+        ]
+    },
+    {
+        "id": "08111182b2e66363",
+        "type": "inject",
+        "z": "d057281b87514831",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "6d595f9c9482133c"
+            ]
+        ]
+    },
+    {
+        "id": "6d595f9c9482133c",
+        "type": "function",
+        "z": "d057281b87514831",
+        "name": "",
+        "func": "let rad = context.get (\"rad\") || 0;\nrad = (rad>6.28) ? 0 : rad + 0.1;\nmsg.payload = (Math.sin (rad)+1)/2*100; \ncontext.set (\"rad\", rad);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "94c5fbb1ce058d3c"
+            ]
+        ]
+    },
+    {
+        "id": "94c5fbb1ce058d3c",
+        "type": "mqtt out",
+        "z": "d057281b87514831",
+        "name": "Camper/device1/random",
+        "topic": "Camper/device1/random",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cfddb7d215ec8662",
+        "x": 750,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "73b447580540509e",
+        "type": "mqtt in",
+        "z": "d057281b87514831",
+        "name": "Camper/#",
+        "topic": "Camper/#",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "cb81acdbe97d447b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 320,
+        "wires": [
+            [
+                "1e063a5dba4e74ea"
+            ]
+        ]
+    },
+    {
+        "id": "1e063a5dba4e74ea",
+        "type": "debug",
+        "z": "d057281b87514831",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "89e352ec1c48dffd",
+        "type": "inject",
+        "z": "716238dcd588d322",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "b3cd5a7fa660b2b9"
+            ]
+        ]
+    },
+    {
+        "id": "d3bdb7ecf350b070",
+        "type": "debug",
+        "z": "716238dcd588d322",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b3cd5a7fa660b2b9",
+        "type": "function",
+        "z": "716238dcd588d322",
+        "name": "",
+        "func": "msg.payload = (\"host:api.myip.com\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "2ffd40eb64a40795"
+            ]
+        ]
+    },
+    {
+        "id": "2ffd40eb64a40795",
+        "type": "http request",
+        "z": "716238dcd588d322",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.myip.com",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "d3bdb7ecf350b070"
+            ]
+        ]
+    },
+    {
+        "id": "3b3d53a48904d3b5",
+        "type": "inject",
+        "z": "438915592f9ff747",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "44bff66cf9b467c7"
+            ]
+        ]
+    },
+    {
+        "id": "44bff66cf9b467c7",
+        "type": "websocket out",
+        "z": "438915592f9ff747",
+        "name": "",
+        "server": "",
+        "client": "217c129e65bbb44b",
+        "x": 600,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "187974342b99da0c",
+        "type": "websocket in",
+        "z": "438915592f9ff747",
+        "name": "",
+        "server": "bc142af1fd76be70",
+        "client": "",
+        "x": 280,
+        "y": 500,
+        "wires": [
+            [
+                "621d46419513a49e"
+            ]
+        ]
+    },
+    {
+        "id": "621d46419513a49e",
+        "type": "debug",
+        "z": "438915592f9ff747",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 500,
+        "wires": []
+    }
+]
